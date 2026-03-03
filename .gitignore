@@ -1,0 +1,22 @@
+# LaTeX intermediate files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out
+*.bbl
+*.blg
+
+# Latexmk
+*.run.xml
+
+# Temporary files
+*.swp
+*~
+
+# others
+Quantum Info/
