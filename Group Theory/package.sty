@@ -12,6 +12,7 @@
 % \usepackage{slashbox}
 % \usepackage{xcolor} it is better to use it on the document as for the table we need to specify the table option 
 % \usepackage{geometry} 
+\usepackage{cancel} % to cancel in maths
 \usepackage{tikz, pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage{csquotes}
@@ -48,17 +49,20 @@
 
 
 % newcommand
-% \newcommand{\R}{$\mathbb{R}$}
-% \newcommand{\C}{$\mathbb{C}$}
-% \newcommand{\Q}{$\mathbb{Q}$}
-% \newcommand{\Z}{$\mathbb{Z}$}
-% \newcommand{\N}{$\mathbb{N}$}
-% \newcommand{\F}{$\mathbb{F}$}
-% \newcommand{\B}{$\mathbb{B}$}
-% \newcommand{\mb}[1]{$\mathbb{#1}$} %This is for general purpose 
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\symS}{\mathfrak{S}}
 % \newcommand{\bul}{$\bullet$}
 % \newcommand{\h}{\ding{42}}
-% \newcommand{\angstrom}{\textup{\AA}}
+\newcommand{\angstrom}{\textup{\AA}}
+\newcommand{\grp}[1]{\langle #1 \rangle} % Generating set: <g>
+\newcommand{\order}[1]{|#1|}             % Order of group/element: |G|
+\newcommand{\normal}{\trianglelefteq}   % Normal subgroup symbol
 \newcommand{\pd}[2]{\left(\displaystyle\frac{\partial #1}{\partial #2}\right)} %Use math environment while using it!
 
 %%% important text color
